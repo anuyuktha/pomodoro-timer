@@ -47,6 +47,10 @@ def pomodoro():
         worksound()
         stop()
         print("GREAT WORK!!")
+for i in range(1,5):
+    pomodoro()
+    print("LONG BREAK! GREAT JOB!!")
+    timer(30,00)
 pomodoro()
 
 
