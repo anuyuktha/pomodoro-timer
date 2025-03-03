@@ -5,20 +5,17 @@ import time
 def breaksound():
     duration=100
     freq=2000
-    for i in range(0,5):
+    for i in range(0,3):
         winsound.Beep(freq,duration)
 def worksound():
-    duration=70
+    duration=2000
     freq=3000
     winsound.Beep(freq,duration)
 
         
-
+start = input("Would you like to begin Timing? (y/n): ")
 def timer(a,b):
     print("This is the timer")
-    
-    
-    start = input("Would you like to begin Timing? (y/n): ")
     if start == "y":
         timeloop=True
     # Variables to keep track and display
@@ -43,11 +40,13 @@ def stop():
     timer(0,5)
     breaksound()
 def pomodoro():
-    for i in range (1,5):
-        print("WORK YOU LAZY ASS")
+    cycle=int(input("How many pomodoro cycles are required? Each cycle includes 25 minutes along with a 5 minute break.  :"))
+    for i in range (1,cycle+1):
+        print("WORK TIMEEEE")
         timer(0,10)
         worksound()
         stop()
+        print("GREAT WORK!!")
 pomodoro()
 
 
