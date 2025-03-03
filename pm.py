@@ -37,13 +37,13 @@ def timer(a,b):
             Sec-=1
 def stop():
     print("WATER BREAK!!")
-    timer(0,5)
+    timer(5,3)
     breaksound()
 def pomodoro():
     cycle=int(input("How many pomodoro cycles are required? Each cycle includes 25 minutes along with a 5 minute break.  :"))
     for i in range (1,cycle+1):
         print("WORK TIMEEEE")
-        timer(0,10)
+        timer(25,0)
         worksound()
         stop()
         print("GREAT WORK!!")
