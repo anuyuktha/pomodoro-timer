@@ -1,0 +1,1 @@
+Hello! This is a code for pomodoro timer. Pomodoro timers are used to focus on something tracked by cycles. Each pomodoro cycle includes a 25 minute work time and a 5 minute break and every 4 cycles, a 30 minute break is provided. Hope this is useful!!
