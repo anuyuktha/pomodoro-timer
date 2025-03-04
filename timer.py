@@ -1,6 +1,6 @@
 import winsound
 import time
-
+# This is a timer
 
 def breaksound():
     duration=100
