@@ -1,6 +1,6 @@
 import winsound
 import time
-
+# this is a pomodoro timer
 
 def breaksound():
     duration=100
