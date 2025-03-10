@@ -8,6 +8,9 @@ def calculator():
         if expression.lower() == 'exit':
             print("Exiting calculator. Goodbye!")
             break
+        if not re.match(r'^[\d+\-*/.]+$', num):
+                print("Invalid expression")
+                continue
         try:
             result = eval(num) 
             print(f"Result: {result}")
